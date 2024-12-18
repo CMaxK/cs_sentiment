@@ -20,7 +20,7 @@ Use a large language model of my choice to analyse the customer side of phone tr
 * Process text to be used for LLM inference
 * Run inference
 * Establish "base truth" dataset to create an accuracy metric. I decided 20% of entire dataset was sufficient to establish a baseline accuracy score.
-* Once happy with score, I run EDA within jupyter notebooks to extract insights
+* Once happy with score, I run analysis within jupyter notebooks to extract insights
 * Package code and related files, create pytest unitests to check functions are correct as well as to monitor model performance if it falls below established threshold.
 * Create CI to automate tests, linting etc.
 
