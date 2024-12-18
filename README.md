@@ -4,7 +4,7 @@
 # LLM to understand customer sentiment, follow-up action and topic tag
 
 # Tech Stack used:
-* Python and various supporting
+* Python and various supporting libraries
 
 # [LLM Used](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)
 
@@ -20,7 +20,7 @@ Use a large language model of my choice to analyse the customer side of phone tr
 * Process text to be used for LLM inference
 * Run inference
 * Establish "base truth" dataset to create an accuracy metric. I decided 20% of entire dataset was sufficient to establish a baseline accuracy score.
-* Once happy with score, I run EDA within jupyter notebooks to extract insights
+* Once happy with score, I run analysis within jupyter notebooks to extract insights
 * Package code and related files, create pytest unitests to check functions are correct as well as to monitor model performance if it falls below established threshold.
 * Create CI to automate tests, linting etc.
 
@@ -33,7 +33,7 @@ Use a large language model of my choice to analyse the customer side of phone tr
 * `pip install -r requirements.txt`
 * You will also need to create a .env file containing a HugginFace Token:
 * `touch .env`
-* `HF_TOKEN="your_hugging_face_token_here"`
+* `echo 'HF_TOKEN="your_hugging_face_token_here"' >> .env`
 * `python src/main.py`
 
 You should then see the following output:
@@ -48,4 +48,4 @@ You can also run the tests by running `pytest tests/` from the root directory:
 
 ![Output](images/3.png)
 
-# EDA and insights can be found [here](https://github.com/CMaxK/cs_sentiment/blob/main/notebooks/inference_prep.ipynb)
+# Notebook containing EDA and insights can be found [here](https://github.com/CMaxK/cs_sentiment/blob/main/notebooks/inference_prep.ipynb)
