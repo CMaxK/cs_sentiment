@@ -33,7 +33,7 @@ Use a large language model of my choice to analyse the customer side of phone tr
 * `pip install -r requirements.txt`
 * You will also need to create a .env file containing a HugginFace Token:
 * `touch .env`
-* `HF_TOKEN="your_hugging_face_token_here"`
+* `echo 'HF_TOKEN="your_hugging_face_token_here"' >> .env`
 * `python src/main.py`
 
 You should then see the following output:
