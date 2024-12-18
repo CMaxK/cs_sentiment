@@ -29,7 +29,7 @@ jobs:
       - name: Format and Lint Code
         run: |
           pip install black flake8
-          black . --check  # Check if code is formatted (don't modify)
+          black . --check
           flake8 .
 
       - name: Run Tests
