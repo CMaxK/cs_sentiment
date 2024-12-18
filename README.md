@@ -4,7 +4,7 @@
 # LLM to understand customer sentiment, follow-up action and topic tag
 
 # Tech Stack used:
-* Python and various supporting
+* Python and various supporting libraries
 
 # [LLM Used](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)
 
