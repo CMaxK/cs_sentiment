@@ -48,4 +48,4 @@ You can also run the tests by running `pytest tests/` from the root directory:
 
 ![Output](images/3.png)
 
-# EDA and insights can be found [here](https://github.com/CMaxK/cs_sentiment/blob/main/notebooks/inference_prep.ipynb)
+# Notebook containing EDA and insights can be found [here](https://github.com/CMaxK/cs_sentiment/blob/main/notebooks/inference_prep.ipynb)
