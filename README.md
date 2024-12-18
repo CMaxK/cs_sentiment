@@ -6,7 +6,7 @@
 # Tech Stack used:
 * Python
 
-# LLM Used([https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)
+# LLM Used - [https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)
 
 # Goal
 Use a large language model of my choice to analyse the customer side of phone transcripts:
