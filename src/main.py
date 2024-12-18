@@ -31,7 +31,6 @@ def run_llm_inference(df: pd.DataFrame, error_folder: str = "../error") -> pd.Da
     error_count = 0
 
     for idx, row in df.iterrows():
-        # Prepare prompt
         messages = [
             {
                 "role": "system",

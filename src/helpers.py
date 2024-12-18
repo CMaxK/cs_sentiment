@@ -36,12 +36,10 @@ def load_transcripts_to_df(data_folder: str) -> pd.DataFrame:
             file_path = os.path.join(data_folder, file_name)
 
             try:
-                # Read file
                 with open(file_path, "r", encoding="utf-8") as file:
                     raw_text = file.read().strip()
                     formatted_text = preprocess_text(raw_text)
 
-                # Append file
                 data.append(
                     {
                         "name": file_name,
