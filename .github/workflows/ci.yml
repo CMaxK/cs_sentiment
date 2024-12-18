@@ -26,12 +26,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Set Environment Variables
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: echo "HF_TOKEN is set."
+
       - name: Format and Lint Code
         run: |
           black . --check
           flake8 . --ignore=E501,F401
 
       - name: Run Tests
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           pip install pytest
           pytest
