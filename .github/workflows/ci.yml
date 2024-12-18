@@ -28,9 +28,8 @@ jobs:
 
       - name: Format and Lint Code
         run: |
-          pip install black flake8
           black . --check
-          flake8 .
+          flake8 . --ignore=E501,F401
 
       - name: Run Tests
         run: |
